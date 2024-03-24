@@ -1,16 +1,10 @@
 tuic://9A703103-8640-4608-989E-3EA918A06262:singbox@dmitlax.wuluwulu.com:7443?congestion_control=bbr&alpn=h3&udp_relay_mode=quic&allow_insecure=1#Bad_Example
-trojan://93ec7261-1c92-4149-848a-26b6fb9fc4ce@my02.trojanyyds.xyz:443?security=tls&type=tcp#%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A180
 vless://cebbb7da-3ca9-4cc0-b843-42cc764b402c@37.123.196.231:13771?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=3C0TrBEhYu3vEiP2_Yct6ybYV4cly84RbMqs8tbAfz4&type=tcp&flow=xtls-rprx-vision&encryption=none#bs-hk%20vless-reality-vision
 vmess://eyJhZGQiOiIxMTkuMjguMjQuMjYiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiMzFhMGQ2MDAtMTc5ZC00NTY0LWQ5ODQtOWIyZWU3MmU5ZmI3IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI1MTIxNSIsInBzIjoi6IW+6K6v5LqRMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
 vmess://eyJhZGQiOiI1Mi4yNS40Ni43OSIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJhYTViZDU1Ni1jYzkxLTQzOTItYWIyNS1kZDhjMzI2ZDJkMjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjM2OTEyIiwicHMiOiIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
 vless://25889ef4-5567-d2d4-f56e-b06a1f7e2e3b@v.hutuxiaogui.com:443?security=tls&sni=v.hutuxiaogui.com&type=tcp&encryption=none#%E8%85%BE%E8%AE%AF%E4%BA%91%E9%A6%99%E6%B8%AF
-hy2://dongtaiwang.com@64.110.25.11:33337?insecure=1#S2-64.110.25.11
-hy2://dongtaiwang.com@51.158.54.46:44550?insecure=1#S1
 vless://e8388660-fb69-45ad-fd80-b34722f3525f@in-mumbai-oracle-2de5d7.ip1.shop:28260?security=reality&sni=swdist.apple.com&fp=chrome&pbk=g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14&type=tcp&flow=xtls-rprx-vision&encryption=none#IN
-vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@125.227.215.155:10453?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-TW
 vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@45.159.217.229:443?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-CT
-vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@31.43.179.131:443?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-CMCC
-vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@43.153.207.2:5537?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-SG
 vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@185.148.104.163:443?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-CMCC
 vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@188.42.145.95:443?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-CT
-vless://e4e7b149-8bd8-4266-8cbb-0987604dbc87@167.68.11.245:443?security=tls&sni=toujiediansigema.5112233.xyz&fp=random&type=ws&path=TG@juzibaipiao%E5%81%B7%E8%8A%82%E7%82%B9%E6%AD%BB%E5%90%97&host=toujiediansigema.5112233.xyz&encryption=none#@JUZIBAIPIAO-CMCC
+socks5://38HknWjfn4:4DYvw4uR0w@02cm.gangbi.vip:20218#%E5%B7%A6%E5%A4%A7%E8%87%A3%E7%9A%84%E4%B8%AD%E8%BD%AC%E8%8A%82%E7%82%B9
