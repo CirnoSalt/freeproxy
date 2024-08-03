@@ -1,8 +1,6 @@
-tuic://9A703103-8640-4608-989E-3EA918A06262:singbox@dmitlax.wuluwulu.com:7443?alpn=h3&congestion_control=bbr#Bad_Example
 vless://cebbb7da-3ca9-4cc0-b843-42cc764b402c@37.123.196.231:13771?encryption=none&flow=xtls-rprx-vision&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=3C0TrBEhYu3vEiP2_Yct6ybYV4cly84RbMqs8tbAfz4&type=tcp&headerType=none#bs-hk%20vless-reality-vision
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1ODE3RVx1OEJBRlx1NEU5MTEiLA0KICAiYWRkIjogIjExOS4yOC4yNC4yNiIsDQogICJwb3J0IjogIjUxMjE1IiwNCiAgImlkIjogIjMxYTBkNjAwLTE3OWQtNDU2NC1kOTg0LTliMmVlNzJlOWZiNyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIiIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIg0KfQ==
 vless://25889ef4-5567-d2d4-f56e-b06a1f7e2e3b@v.hutuxiaogui.com:443?encryption=none&security=tls&sni=v.hutuxiaogui.com&type=tcp&headerType=none#%E8%85%BE%E8%AE%AF%E4%BA%91%E9%A6%99%E6%B8%AF
-trojan://af1b7626-57e2-45e8-9f1a-d97a8f3977c0@81.31.232.46:2333?security=tls&sni=www.qq.com&type=tcp&headerType=none#tr
 ss://YWVzLTEyOC1nY206MmM1MjczNTctZWZiOC00OGRiLTkxMjctODZkNDk1ODY4MDk3@114.80.150.220:54729#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%E9%9B%9E%E8%9B%8B%E4%BB%94%202.0%C3%97%2001
 ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206WWpVeU1tUmpZVGsyTWpjNVl6YzNOUT09Ok1tTTFNamN6TlRjdFpXWmlPQzAwT0E9PQ==@114.80.150.220:54829#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%E9%9B%9E%E8%9B%8B%E4%BB%94%202.0%C3%97%2002
 ss://YWVzLTEyOC1nY206MmM1MjczNTctZWZiOC00OGRiLTkxMjctODZkNDk1ODY4MDk3@183.56.163.155:55729#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%E9%9B%9E%E8%9B%8B%E4%BB%94%205.0%C3%97%2001
@@ -16,4 +14,5 @@ vless://df346d61-719c-41c0-cd8b-45dec3281362@fdg.9901151.xyz:80?encryption=none&
 vless://a1fdfdd0-afa3-4d8d-d11c-a97d198d4131@bjst.9901151.xyz:80?encryption=none&security=none&type=ws&path=%2F#%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E3%83%BB%E4%BC%8A%E6%96%AF%E5%85%B0%E5%A0%A1
 vless://36bded27-5e47-475c-c4f4-8016dcd196c9@mrdn.9901151.xyz:80?encryption=none&security=none&type=ws&path=%2F#%E6%91%A9%E5%B0%94%E5%A4%9A%E7%93%A6%E3%83%BB%E5%9F%BA%E5%B8%8C%E8%AE%B7%E4%B9%8C
 vless://fe5f8459-e9b0-4738-f83c-b818cbab832f@lsj.9901151.xyz:80?encryption=none&security=none&type=ws&path=%2F#%E7%BE%8E%E5%9B%BD%C2%B7%E6%B0%B4%E7%89%9B%E5%9F%8E
-ss://eGNoYWNoYTIwLWlldGYtcG9seTEzMDU6dGVkZHlzdW4uY29t@120.232.240.162:22222#IEPL-%E6%B7%B1%E6%B8%AF
+vless://205548fa-bd2c-4957-f29f-fdc85dd02909@89.117.217.34:12812?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.sega.com&fp=random&pbk=qCZUdWQZ2H33vWXnOkG8NpxBeq3qn5QWXlfCOWBNkkc&sid=dd118d01&type=tcp&headerType=none#1
+ss://YWVzLTI1Ni1nY206NmQ3ZTA3ZDctOGY2Ny00ZjMxLWExMTMtZDhlODFjMmUyYWE4@36.213.30.18:32520#dmit%E9%A6%99%E6%B8%AF
