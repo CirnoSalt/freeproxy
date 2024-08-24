@@ -20,19 +20,24 @@ proxies:
   - {name: 🇭🇰 腾讯云香港, server: v.hutuxiaogui.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 25889ef4-5567-d2d4-f56e-b06a1f7e2e3b, tls: true, tfo: false, skip-cert-verify: false, servername: v.hutuxiaogui.com, network: tcp}
   - {name: SCP官方节点, server: 82.153.135.50, port: 34171, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, client-fingerprint: chrome, type: vless, uuid: ac74dfae-6039-43c0-fa55-fbf6e6630df6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: dmcc.ae, network: tcp}
   - {name: 🇺🇸 美国 racknerd, server: rn.xiaoxiaoblogs.top, port: 6417, client-fingerprint: chrome, type: hysteria2, password: dbd861ce, auth: dbd861ce, sni: www.bing.com, skip-cert-verify: false}
+  - {name: 🇭🇰 HK+01, server: 103.17.99.37, port: 19280, reality-opts: {public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo, short-id: a8bd783f}, client-fingerprint: chrome, type: vless, uuid: 89b90001-4206-4871-a99d-1744d48f215b, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: cdn-dynmedia-1.microsoft.com, network: tcp}
+  - {name: 🇺🇸 美国🇺🇸, server: 2602:fa4f:300:3f8:8551:ba60:b67:a0b5, port: 16801, client-fingerprint: chrome, type: vmess, uuid: 3dd1d4bc-c428-4332-d7ab-5fc7b50829e2, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2049}}
+  - {name: 🇭🇰 HK+01、, server: 103.17.99.37, port: 19280, reality-opts: {public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo, short-id: a8bd783f}, client-fingerprint: chrome, type: vless, uuid: 89b90001-4206-4871-a99d-1744d48f215b, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: cdn-dynmedia-1.microsoft.com, network: tcp}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🔯 故障转移
-      - 🔮 负载均衡
       - DIRECT
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
       - SCP官方节点
       - 🇺🇸 美国 racknerd
+      - 🇭🇰 HK+01
+      - 🇺🇸 美国🇺🇸
+      - 🇭🇰 HK+01、
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -44,6 +49,9 @@ proxy-groups:
       - 🇭🇰 腾讯云香港
       - SCP官方节点
       - 🇺🇸 美国 racknerd
+      - 🇭🇰 HK+01
+      - 🇺🇸 美国🇺🇸
+      - 🇭🇰 HK+01、
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -54,17 +62,9 @@ proxy-groups:
       - 🇭🇰 腾讯云香港
       - SCP官方节点
       - 🇺🇸 美国 racknerd
-  - name: 🔮 负载均衡
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://www.gstatic.com/generate_204
-    interval: 180
-    proxies:
-      - 🇭🇰 bs-hk vless-reality-vision
-      - 腾讯云1
-      - 🇭🇰 腾讯云香港
-      - SCP官方节点
-      - 🇺🇸 美国 racknerd
+      - 🇭🇰 HK+01
+      - 🇺🇸 美国🇺🇸
+      - 🇭🇰 HK+01、
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,12 +83,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔯 故障转移
-      - 🔮 负载均衡
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
       - SCP官方节点
       - 🇺🇸 美国 racknerd
+      - 🇭🇰 HK+01
+      - 🇺🇸 美国🇺🇸
+      - 🇭🇰 HK+01、
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
