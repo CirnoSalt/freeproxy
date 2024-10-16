@@ -15,14 +15,13 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
+  - {name: 🇸🇬 橘子新加坡_优化_TLS, server: 172.64.161.35, port: 443, client-fingerprint: chrome, type: vmess, uuid: bb8e2215-82f1-4e04-de18-b94407a5ab13, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: juzi_sg.zdzdzd.xyz, network: ws, ws-opts: {path: /juzi, headers: {Host: juzi_sg.zdzdzd.xyz}}}
   - {name: 🇭🇰 bs-hk vless-reality-vision, server: 37.123.196.231, port: 13771, reality-opts: {public-key: 3C0TrBEhYu3vEiP2_Yct6ybYV4cly84RbMqs8tbAfz4}, client-fingerprint: chrome, type: vless, uuid: cebbb7da-3ca9-4cc0-b843-42cc764b402c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp}
   - {name: 腾讯云1, server: 119.28.24.26, port: 51215, client-fingerprint: chrome, type: vmess, uuid: 31a0d600-179d-4564-d984-9b2ee72e9fb7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 腾讯云香港, server: v.hutuxiaogui.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 25889ef4-5567-d2d4-f56e-b06a1f7e2e3b, tls: true, tfo: false, skip-cert-verify: false, servername: v.hutuxiaogui.com, network: tcp}
-  - {name: SCP官方节点, server: 82.153.135.50, port: 34171, reality-opts: {public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg}, client-fingerprint: chrome, type: vless, uuid: ac74dfae-6039-43c0-fa55-fbf6e6630df6, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: dmcc.ae, network: tcp}
   - {name: 🇺🇸 美国 racknerd, server: rn.xiaoxiaoblogs.top, port: 6417, client-fingerprint: chrome, type: hysteria2, password: dbd861ce, auth: dbd861ce, sni: www.bing.com, skip-cert-verify: false}
-  - {name: 🇭🇰 HK+01, server: 103.17.99.37, port: 19280, reality-opts: {public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo, short-id: a8bd783f}, client-fingerprint: chrome, type: vless, uuid: 89b90001-4206-4871-a99d-1744d48f215b, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: cdn-dynmedia-1.microsoft.com, network: tcp}
-  - {name: 🇺🇸 美国🇺🇸, server: 2602:fa4f:300:3f8:8551:ba60:b67:a0b5, port: 16801, client-fingerprint: chrome, type: vmess, uuid: 3dd1d4bc-c428-4332-d7ab-5fc7b50829e2, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2049}}
-  - {name: 🇭🇰 HK+01、, server: 103.17.99.37, port: 19280, reality-opts: {public-key: F5_aTQFA2QRCig3L-qT0Qth76JdewSHK5MgEt_p8Dlo, short-id: a8bd783f}, client-fingerprint: chrome, type: vless, uuid: 89b90001-4206-4871-a99d-1744d48f215b, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: cdn-dynmedia-1.microsoft.com, network: tcp}
+  - {name: sgv6, server: sgv6.zdzdzd.xyz, port: 42516, client-fingerprint: chrome, type: vmess, uuid: 18347d04-83e5-4122-d30d-58e96c92056d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /juzi, headers: {Host: sgv6.zdzdzd.xyz}}}
+  - {name: 🇯🇵 橘子日本_优化_TLS, server: 141.11.139.211, port: 8443, client-fingerprint: chrome, type: vmess, uuid: 65d0a3ab-c03a-4b02-a82a-477b1d5bc082, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: juzi_jp.zdzdzd.xyz, network: ws, ws-opts: {path: /juzi, headers: {Host: juzi_jp.zdzdzd.xyz}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,41 +29,38 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - DIRECT
+      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - SCP官方节点
       - 🇺🇸 美国 racknerd
-      - 🇭🇰 HK+01
-      - 🇺🇸 美国🇺🇸
-      - 🇭🇰 HK+01、
+      - sgv6
+      - 🇯🇵 橘子日本_优化_TLS
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - SCP官方节点
       - 🇺🇸 美国 racknerd
-      - 🇭🇰 HK+01
-      - 🇺🇸 美国🇺🇸
-      - 🇭🇰 HK+01、
+      - sgv6
+      - 🇯🇵 橘子日本_优化_TLS
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - SCP官方节点
       - 🇺🇸 美国 racknerd
-      - 🇭🇰 HK+01
-      - 🇺🇸 美国🇺🇸
-      - 🇭🇰 HK+01、
+      - sgv6
+      - 🇯🇵 橘子日本_优化_TLS
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,14 +79,13 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔯 故障转移
+      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - SCP官方节点
       - 🇺🇸 美国 racknerd
-      - 🇭🇰 HK+01
-      - 🇺🇸 美国🇺🇸
-      - 🇭🇰 HK+01、
+      - sgv6
+      - 🇯🇵 橘子日本_优化_TLS
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -462,7 +457,6 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
@@ -530,6 +524,7 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -563,7 +558,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -1957,6 +1951,7 @@ rules:
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,itv.com,🚀 节点选择
   - DOMAIN-SUFFIX,itvstatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-KEYWORD,jooxweb-api,🚀 节点选择
   - DOMAIN-SUFFIX,joox.com,🚀 节点选择
   - DOMAIN-KEYWORD,japonx,🚀 节点选择
@@ -2055,7 +2050,6 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,🚀 节点选择
   - DOMAIN-SUFFIX,olevodtv.com,🚀 节点选择
   - DOMAIN-KEYWORD,openai,🚀 节点选择
-  - DOMAIN,gemini.google.com,🚀 节点选择
   - DOMAIN-SUFFIX,auth0.com,🚀 节点选择
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
@@ -2341,6 +2335,13 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
+  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -2414,6 +2415,7 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -2727,6 +2729,8 @@ rules:
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
@@ -3036,6 +3040,7 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
