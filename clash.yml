@@ -15,52 +15,33 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇸🇬 橘子新加坡_优化_TLS, server: 172.64.161.35, port: 443, client-fingerprint: chrome, type: vmess, uuid: bb8e2215-82f1-4e04-de18-b94407a5ab13, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: juzi_sg.zdzdzd.xyz, network: ws, ws-opts: {path: /juzi, headers: {Host: juzi_sg.zdzdzd.xyz}}}
   - {name: 🇭🇰 bs-hk vless-reality-vision, server: 37.123.196.231, port: 13771, reality-opts: {public-key: 3C0TrBEhYu3vEiP2_Yct6ybYV4cly84RbMqs8tbAfz4}, client-fingerprint: chrome, type: vless, uuid: cebbb7da-3ca9-4cc0-b843-42cc764b402c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp}
   - {name: 腾讯云1, server: 119.28.24.26, port: 51215, client-fingerprint: chrome, type: vmess, uuid: 31a0d600-179d-4564-d984-9b2ee72e9fb7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 腾讯云香港, server: v.hutuxiaogui.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 25889ef4-5567-d2d4-f56e-b06a1f7e2e3b, tls: true, tfo: false, skip-cert-verify: false, servername: v.hutuxiaogui.com, network: tcp}
-  - {name: 🇺🇸 美国 racknerd, server: rn.xiaoxiaoblogs.top, port: 6417, client-fingerprint: chrome, type: hysteria2, password: dbd861ce, auth: dbd861ce, sni: www.bing.com, skip-cert-verify: false}
-  - {name: sgv6, server: sgv6.zdzdzd.xyz, port: 42516, client-fingerprint: chrome, type: vmess, uuid: 18347d04-83e5-4122-d30d-58e96c92056d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /juzi, headers: {Host: sgv6.zdzdzd.xyz}}}
-  - {name: 🇯🇵 橘子日本_优化_TLS, server: 141.11.139.211, port: 8443, client-fingerprint: chrome, type: vmess, uuid: 65d0a3ab-c03a-4b02-a82a-477b1d5bc082, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: juzi_jp.zdzdzd.xyz, network: ws, ws-opts: {path: /juzi, headers: {Host: juzi_jp.zdzdzd.xyz}}}
+  - {name: vl-reality-racknerd-52e2fb2, server: 107.172.72.164, port: 443, reality-opts: {public-key: C4O_xQZBplBytSKCj1Z-wlEPFPsHvJriqJtDe-_ryEI, short-id: a5e251a9}, client-fingerprint: chrome, type: vless, uuid: c602d8ec-7ab9-4542-acb4-6c2e13225bd2, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: www.jetbrains.com, network: tcp}
+  - {name: anycast.anxray.top, server: 213.156.156.4, port: 80, client-fingerprint: chrome, type: vless, uuid: 3e9aa1f9-a1ba-450e-884e-a5e2c9888a34, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: anycast.anxray.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🔯 故障转移
       - DIRECT
-      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - 🇺🇸 美国 racknerd
-      - sgv6
-      - 🇯🇵 橘子日本_优化_TLS
+      - vl-reality-racknerd-52e2fb2
+      - anycast.anxray.top
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - 🇺🇸 美国 racknerd
-      - sgv6
-      - 🇯🇵 橘子日本_优化_TLS
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 180
-    proxies:
-      - 🇸🇬 橘子新加坡_优化_TLS
-      - 🇭🇰 bs-hk vless-reality-vision
-      - 腾讯云1
-      - 🇭🇰 腾讯云香港
-      - 🇺🇸 美国 racknerd
-      - sgv6
-      - 🇯🇵 橘子日本_优化_TLS
+      - vl-reality-racknerd-52e2fb2
+      - anycast.anxray.top
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -78,14 +59,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔯 故障转移
-      - 🇸🇬 橘子新加坡_优化_TLS
       - 🇭🇰 bs-hk vless-reality-vision
       - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - 🇺🇸 美国 racknerd
-      - sgv6
-      - 🇯🇵 橘子日本_优化_TLS
+      - vl-reality-racknerd-52e2fb2
+      - anycast.anxray.top
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1806,6 +1784,7 @@ rules:
   - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
   - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
   - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
+  - IP-CIDR,95.161.64.0/20,🚀 节点选择,no-resolve
   - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
   - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
   - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
@@ -2513,6 +2492,7 @@ rules:
   - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
+  - DOMAIN-SUFFIX,x.com,🚀 节点选择
   - DOMAIN-SUFFIX,t.me,🚀 节点选择
   - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
   - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
