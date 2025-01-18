@@ -16,21 +16,22 @@ dns:
     - tls://dns.google:853
 proxies:
   - {name: 🇭🇰 bs-hk vless-reality-vision, server: 37.123.196.231, port: 13771, reality-opts: {public-key: 3C0TrBEhYu3vEiP2_Yct6ybYV4cly84RbMqs8tbAfz4}, client-fingerprint: chrome, type: vless, uuid: cebbb7da-3ca9-4cc0-b843-42cc764b402c, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: addons.mozilla.org, network: tcp}
-  - {name: 腾讯云1, server: 119.28.24.26, port: 51215, client-fingerprint: chrome, type: vmess, uuid: 31a0d600-179d-4564-d984-9b2ee72e9fb7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 腾讯云香港, server: v.hutuxiaogui.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 25889ef4-5567-d2d4-f56e-b06a1f7e2e3b, tls: true, tfo: false, skip-cert-verify: false, servername: v.hutuxiaogui.com, network: tcp}
-  - {name: vl-reality-racknerd-52e2fb2, server: 107.172.72.164, port: 443, reality-opts: {public-key: C4O_xQZBplBytSKCj1Z-wlEPFPsHvJriqJtDe-_ryEI, short-id: a5e251a9}, client-fingerprint: chrome, type: vless, uuid: c602d8ec-7ab9-4542-acb4-6c2e13225bd2, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: www.jetbrains.com, network: tcp}
-  - {name: anycast.anxray.top, server: 213.156.156.4, port: 80, client-fingerprint: chrome, type: vless, uuid: 3e9aa1f9-a1ba-450e-884e-a5e2c9888a34, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: anycast.anxray.top}}}
+  - {name: hy2-racknerd-52e2fb2, server: 107.172.72.164, port: 50572, client-fingerprint: chrome, type: hysteria2, password: 45bbae4c-c963-42c7-807d-58de2607e8cd, auth: 45bbae4c-c963-42c7-807d-58de2607e8cd, sni: www.bing.com, skip-cert-verify: false}
+  - {name: S15, server: s15.serv00.com, port: 7777, client-fingerprint: chrome, type: hysteria2, password: 75577117-ABCD-DCBA-AAAA-CC777775577B, auth: 75577117-ABCD-DCBA-AAAA-CC777775577B, sni: www.bing.com, skip-cert-verify: false}
+  - {name: 🇭🇰 google-hk-v6    试试这个, server: "[2600:1900:41a0:616::]", port: 36866, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: NkRJVGlNR3JBQW5Udzh1QXQxQkVXM1hQWm5Bd1RLS2w=, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🔯 故障转移
       - DIRECT
       - 🇭🇰 bs-hk vless-reality-vision
-      - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - vl-reality-racknerd-52e2fb2
-      - anycast.anxray.top
+      - hy2-racknerd-52e2fb2
+      - S15
+      - 🇭🇰 google-hk-v6    试试这个
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -38,10 +39,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇭🇰 bs-hk vless-reality-vision
-      - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - vl-reality-racknerd-52e2fb2
-      - anycast.anxray.top
+      - hy2-racknerd-52e2fb2
+      - S15
+      - 🇭🇰 google-hk-v6    试试这个
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - 🇭🇰 bs-hk vless-reality-vision
+      - 🇭🇰 腾讯云香港
+      - hy2-racknerd-52e2fb2
+      - S15
+      - 🇭🇰 google-hk-v6    试试这个
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -59,11 +70,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 bs-hk vless-reality-vision
-      - 腾讯云1
       - 🇭🇰 腾讯云香港
-      - vl-reality-racknerd-52e2fb2
-      - anycast.anxray.top
+      - hy2-racknerd-52e2fb2
+      - S15
+      - 🇭🇰 google-hk-v6    试试这个
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
